@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --14px: 0.875rem;
+  --15px: 0.9375rem;
+  --16px: 1rem;
+  --17px: 1.0625rem;
+  --18px: 1.125rem;
+  --19px: 1.1875rem;
+  --20px: 1.25rem;
+  --21px: 1.3125rem;
+  --22px: 1.375rem;
+  --23px: 1.4375rem;
+  --24px: 1.5rem;
+  --25px: 1.5625rem;
+  --26px: 1.625rem;
+  --27px: 1.6875rem;
+  --28px: 1.75rem;
+  --29px: 1.8125rem;
+  --30px: 1.875rem;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  padding: 30px;
+  background: #f2f2f2;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container {
+  max-width: calc(920rem / 16);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.column {
+  padding: 48px 48px 0;
+}
+
+.sedans {
+  background: #e28828;
+}
+
+.suvs {
+  background: #006970;
+}
+
+.luxury {
+  background: #004241;
+}
+
+.icon {
+  margin-bottom: calc(35rem / 16);
+}
+
+.heading {
+  font-size: calc(40rem / 16);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  margin-bottom: var(--25px);
+}
+
+.text {
+  font-size: var(--15px);
+  color: #fff;
+  line-height: 1.6;
+  opacity: 0.75;
+  margin-bottom: calc(83rem / 16);
+}
+
+.btn:link,
+.btn:visited {
+  font-size: var(--15px);
+  display: inline-block;
+  padding: 0.8em 2.1em;
+  background: #f2f2f2;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-bottom: calc(48rem / 16);
+}
+
+.btn--sedans:link,
+.btn--sedans:visited {
+  color: #e28625;
+}
+
+.btn--sedans:hover,
+.btn--sedans:active {
+  color: #f2f2f2;
+  background: #e28828;
+
+  /* TO APPLY A BORDER INSIDE THE ELEMENT, AVOIDING EXTRA 2 PXs */
+  box-shadow: inset 0 0 0 2px #f2f2f2;
+}
+
+.btn--suvs:link,
+.btn--suvs:visited {
+  color: #006971;
+}
+
+.btn--suvs:hover,
+.btn--suvs:active {
+  color: #f2f2f2;
+  background: #006970;
+  box-shadow: inset 0 0 0 2px #f2f2f2;
+}
+
+.btn--luxury:link,
+.btn--luxury:visited {
+  color: #004140;
+}
+
+.btn--luxury:hover,
+.btn--luxury:active {
+  color: #f2f2f2;
+  background: #004241;
+  box-shadow: inset 0 0 0 2px #f2f2f2;
+}

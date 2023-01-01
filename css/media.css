@@ -1,0 +1,22 @@
+@media (max-width: 49.125em) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .text {
+    margin-bottom: var(--25px);
+  }
+
+  .column {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+/* ***********************
+Safari gap fix
+*********************** */
+
+.no-flexbox-gap .container {
+  margin-bottom: 20px;
+}
